@@ -1,0 +1,345 @@
+                                JAVA
+       JDK                                                 JRE 
+java development kit                        java runtime enviorment 
+    {jre}                                           JIT  
+    javac                                           JVM
+    java                                            ClassLoader
+    jdb 
+    javadoc
+    javah
+    appletviewer 
+
+
+
+javac XX.java 
+.java -> javac -> .class 
+  HL ->  javac -> bytecode 
+
+java XX -> run 
+    classLoader -> XX -> load -> 
+                JVM -> JIT ->  
+
+--------------------------------------------------------------------------------------------
+command prompt -> javac , javac -version 
+                  java  java -version 
+
+                  java 1 1.2 1.3 1.4 ..... 
+                  java 8 === java 1.8 
+
+google -> download jdk 8 ->
+
+--------------------------------------------------------------------------------------------
+
+POP -> add() sub() mul() div()
+OOP -> class , object
+
+
+java -> OOP 
+
+
+class  ->  general , logical , group  
+object ->  special , physical , member
+
+
+Men -> class 
+DhirajSir -> object 
+
+Laptop -> class 
+Iphone -> class 
+Lenovo Legion Y520 -> object 
+
+class -> data member , member function 
+         variable , method
+
+class Calc -> 
+    no1 no2 no3 
+    add()
+    sub()
+    div()
+
+class Bank => 
+    balance 
+    userName
+    password 
+    address 
+
+    accountOpen()
+    deposit()
+    wid()
+
+-------------------------------------------------------------------------
+
+Amazon -> 
+
+    Product  
+        productId 
+        name 
+        category
+        price 
+        qty
+
+        
+        addProduct()
+        removeProduct()
+        updateProduct()
+        listProduct()
+        searchProduct()
+        getProductDetail()
+
+    User
+        firstName
+        email
+        password 
+
+        signup()
+        login()
+    
+    Cart 
+
+    Order 
+
+    Payment 
+-------------------------------------------------------------------
+
+.java -> extension 
+
+
+javac FileName.java --> .class for each and every class that is present inside java file 
+
+javac FileName.java --> .class 
+
+javac First.java -> First.class 
+java First 
+
+
+javac First.java -> First.class , Second.class , Third.class 
+
+---------------------------------
+we must have to create instance / object of a class then we can access property of a class 
+
+---------------------------------------------
+
+.class -> bytecode -> jvm -> machine dependent code -> 
+
+windows -> .java -> compile -> .class 
+
+windows -> .class -> mac | linux -> JVM  
+
+    .class {bytecode} {windows} --> {mac} system dependent code  --> execute 
+    
+    .class {bytecode} {windows} --> {linux} system dependent code --> execute 
+
+    bytecode->magic coode 
+-----------------------------------------------------------
+
+
+Variable -> 
+            no1 = 10
+            no2 = 20 
+            ans = no1 + no2 
+        
+        data name -> store value 
+        data name , which  used to store values
+
+        a = 10 
+        # 10 
+        #
+        a = 20  over write -> we can store single value at a time 
+        # 20   
+
+what type of data we are going to store ? 
+
+Data Type -> 
+            a = 10  #whole number -> integer  
+            a = "thumsup" # String 
+            a = 20.20 #number -> float 
+
+
+    Java :  1) Primitive 
+                byte        1 Byte        -128 to 12        whole number 
+                short       2 Byte       -32768 to 32767    whole number
+                char        2 Byte         'R'              single character 
+                int         4 Byte                          whole number  
+                long        8 Byte                          whole number 
+                float       4 Byte                          fraction digit - real 
+                double      8 Byte                          fraction digit - real 
+                boolean     1 bit                           true | false  
+            2) NonPrimitive 
+                class  
+                enum 
+                array 
+
+
+
+byte no1; # number whole  number -> rangle -128 to 127 
+
+-----------------------------------------------------------------------------------
+
+
+
+How to declare varibale and Assign Value: 
+
+
+byte b;
+short s; 
+
+int no1; 
+long no2; 
+
+float f1;
+double d1; 
+
+char c; 
+
+boolean bb; 
+
+
+int k;  # declaration 
+k =10;  # initialization 
+
+
+int k = 10; #declare init 
+
+-------------------------------------------------------------
+
+
+java -> class  -> use 
+
+java api -> se -> JAVA SE API 
+
+
+folders -> package -> 
+    java 
+        lang
+            String System Math  
+        util 
+            Scanner Date Calendar
+        io
+            File FileReader FileWriter PrintWriter 
+        sql
+            Connection Statement PreparedStatement  
+
+1) inbuilt 
+2) user define 
+
+
+    movie 
+        bollywood 
+        hollywood 
+            hindi
+                action 
+                drama 
+                cartoon 
+            eng 
+javac -> .class -> first line 
+        import java.lang.*; 
+-----------------------------------------------------------------------
+
+Scope of Variable In java : 
+
+    instance : class {}
+    static   : class - static {} 
+    local {block} : method {  }  method {   {}  }
+
+    static int s; //static  ----- class -> memory--> onetime 
+    int i; //instance  ------- object -> memory  --> nTime 
+
+    if we create 5000 objects then 
+        i will initialize in the memory for 5000 times 
+        but 
+        s will initialize memory only once 
+
+
+    static / instance / block / local -> memory ? 
+
+    static -> heap 
+    instance -> heap 
+    local -> stack 
+    block -> stack 
+
+    method() -> memory -> stack 
+
+    when your heap memory will release ? free ? deallocate? 
+    who? 
+        GC ->
+                obj = null 
+
+        program end -> 
+        scope end -> 
+-------------------------------------------------------------------------------------
+
+class XX 
+    8 Primitive -> instance level -> no value 
+    display -> 8 Primitive print 
+    main -> XX object -> display call 
+    int byte short long ? 
+    float double? 
+    char ?
+    boolean ? 
+
+    who? default value? 
+    integer type => 0 
+    real => 0.0 
+    boolean => false 
+    char => '\0'  '\u0000' -> unicode
+
+    a => 97 
+    A => 65  
+-------------------------------------------------------------------------------------
+
+Constructor 
+    is a special method , who's name is same as class name 
+    it must not have any return type 
+
+    Constructor is used to initialize instance variable 
+
+    we dont have to call Constructor 
+    it will call automatically when we create instance. 
+
+class Calc { 
+    Calc(){
+
+    }
+
+    void add(){
+
+    }
+}
+
+    Two types of Constructor in java : 
+        1) implicit Constructor --> 
+        2) explicit Constructor --> 
+                    1) default - no arg 
+                    2) parameterized - arg 
+
+--------------------------------------------------------------------------
+class  X  a b c  
+class  Y  d e f   
+
+Inheritance -> object of one class can access property of another class  
+
+X ->giver -> parent 
+Y ->taker -> child 
+
+    core reuse 
+
+Y -> a b ,  c 
+
+extends keyword is used to achieve Inheritance 
+
+class X{
+
+}
+class Y extends X {
+
+}
+
+
+OOPs- > Inheritance -> 5 Type 
+    1) single level  
+    2) multi level 
+    3) multiple 
+    4) hirerchical 
+    5) hybrid 
+----------------------------------------------------------------------------
+
