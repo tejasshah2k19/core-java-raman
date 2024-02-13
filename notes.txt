@@ -343,3 +343,211 @@ OOPs- > Inheritance -> 5 Type
     5) hybrid 
 ----------------------------------------------------------------------------
 
+abstract
+    class 
+    method 
+
+static 
+
+final -> 
+
+        class    -> can not be inherited  {String} 
+        method   -> override 
+        variable -> constant -> once we assign value we never modify  
+
+strictfp -> IEE 754 
+        class 
+        method 
+
+------------------------------------------------------------------------------
+
+interface -> pure abstract class 
+
+abstract interface RBI{
+    //method -> abstract 
+
+    void deposit();
+    abstract void checkBalance();
+}
+
+class ICICI implements RBI{
+    
+}
+
+
+class can extends class 
+class can implements Interface 
+Interface can extends Interface
+
+
+java 8 -> static default in interface 
+
+functional interface -> 
+        1 abstract method -> only 1 
+
+-----------------------------------------------------------------------------        
+
+
+static method 
+
+
+import static java.lang.Math.*;
+
+ClassName.method() 
+Math.random()
+
+method()
+random()
+
+------------------------------------------------------------------------------
+
+
+static block call once in entire life => when class is loading in memory 
+instance block will call all the time when we create instance 
+        yes instance block will call before constructor 
+
+  priorty -> static block , instance block , constructor 
+
+-------------------------------------------------------------------------------      
+
+String -> 
+    java class 
+    java.lang 
+    store characters 
+    string -> char[] 
+
+
+    String s1 = "rock"; 
+    
+
+Task:- {array}
+    array of size 5 
+
+    1 9 5 2 4 
+    ->1 2 4 5 9 
+
+    1 4 5 2 4 
+   ->4 1 2 5 
+  {more freq is lesser in weight }
+-----------------------------------------------------------------------
+
+arr[]={1,4,5,2,4}
+
+freq[] 
+freq[1] = 1 
+freq[4] = 2 
+freq[5] = 1 
+freq[2] = 1 
+
+1,4,5,2,4
+  
+----------------------------------------------------------
+
+throws -> by pass exception handeling when we have checked exception 
+
+throw -> is used throw exception manually 
+
+Throwable -> is class , parent of all Exception and Error 
+
+
+------------------------------------------------------------
+assertion -> debug , test 
+
+    check -> 
+
+
+
+bank -> wid() dep()  
+            assert -> amt < 0 
+
+
+
+assert -> 1.4 
+
+1.1 1.2 1.3 
+    int assert; 
+
+1.4+
+    int assert; //assert is a keyword 
+
+
+java -ea AssertDemo 
+java -da AssertDemo 
+java -ea:.  AssertDemo 
+java -ea:com.controller  AssertDemo 
+java -ea:com -da:com.dao  AssertDemo  
+
+------------------------------------------------------------------------------
+{{ }} -> valid 
+
+{()} -> valid 
+
+{[]} -> valid 
+
+{[}} -> inValid 
+
+{([)]} -> inValid 
+
+--------------------------------------------------------------------------------
+append() 
+
+StringBuffer sb = new StringBuffer();
+
+StringBuffer sb1  = new StringBuffer("rock");
+
+
+sb.append("Sparrow");
+
+System.out.println(sb); //rockSparrow 
+
+sb.insert(4," ");//rock Sparrow 
+
+System.out.println(sb); //rock Sparrow 
+
+
+
+-- append 
+-- length 
+capacity 
+insert 
+delete 
+replace 
+reverse() 
+
+charAt
+deleteCharAt() 
+
+------------------------------
+
+1) jony jony yes papa -> Jony Jony Yes Papa 
+2) string palindrome 
+3) toggleCase -> Jony JonY YeS paPA -> jONY jONy yEs PApa 
+----------------------------------------------------------------
+
+1) take date of birth from user and print age 
+2) 1 year loan has 12 installment , we ask user a date on which emi will start ,
+    we have to print all the date and day of each emi based on given date 
+
+-------------------------------------------------------------    
+
+
+
+Date -> 
+Calendar -> 
+
+22-april-1990
+
+31-12-1985
+
+12/13/1989 
+
+
+
+
+1) Take DAte of Birth From user and print eligibe if age is > 18 
+    user can input date in format that you provide 
+    if they input invalid format print message instead of app crash 
+
+2) print Above date of birth in Mon-DD-YYYY format 
+ 
+ 
