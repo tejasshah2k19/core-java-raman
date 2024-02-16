@@ -551,3 +551,55 @@ Calendar ->
 2) print Above date of birth in Mon-DD-YYYY format 
  
  
+-----------------------------------------------------------------------------------------------------
+
+
+String name ; 
+String email; 
+String password;
+
+balance = 100000 
+
+//process 
+
+//close 
+
+//re-open 
+
+
+//we want to store data - 
+
+
+//file 
+//database 
+
+file -> input / data / store 
+
+
+
+
+
+
+File class 
+-----------------------------------------------------------------------------
+
+take folder name from user , if folder is present then print all the files and folder of given directory 
+    also print count of files and folder 
+        , if folder is not present then create  
+                2 pdf 
+                2 folder inside it 
+                pdf file name are given by user 
+                and 
+                fodler fname are fiven by user. 
+
+------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
