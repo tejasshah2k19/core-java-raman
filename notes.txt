@@ -593,7 +593,32 @@ take folder name from user , if folder is present then print all the files and f
                 fodler fname are fiven by user. 
 
 ------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
 
+    byte ->
+
+    FileOutputStream --> write -> into -> file 
+
+    FileInputStream --> read -> from -> file 
+
+
+
+    File f = new File("notes.txt"); 
+
+    FileOutputStream fos = new FileOutputStream(f); //file object 
+
+    fos.write("ahmedabad"); // compilation fail 
+
+    fos.write('a'); //works 
+
+------------------------------------------------------
+
+create 1 file with multiple paragraph 
+
+now read this file and print all the paragraph , we don't want to print all data in each para 
+we want first line or max 20 cahracters from each para. 
+
+------------------------------------------------------
 
 
 
